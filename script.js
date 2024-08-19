@@ -40,10 +40,13 @@ function desencriptar() {
         tituloMensaje.textContent = "Texto encriptado con exito";
            parrafo.textContent = "";
             muñeco.src = "./img/encriptado.jpg";
-
-
-
-    }
-
-
+    } else
+    muñeco.src = "./img/muñeco.png";
+    tituloMensaje.textContent = "Ningun mensaje fue encontrado";
+    parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar"
+      alert("Debes ingresar algun texto");+
 }
+
+
+
+    
