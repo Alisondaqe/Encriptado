@@ -1,3 +1,6 @@
+body{
+  background-image: url(img/fondododd.jpg);
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,37 +10,30 @@
     position: relative;
     width: 100vh;
     height: 100vh;
-    background: rgb(255, 11, 133);
+   color: brown;
 }
-.texto{
-    position: absolute;
-    width: 42% ;
-    height: 60%;
-    left: 12%;
-    top: 15%;
-    border: none;
-    
-  }
+
   .texto{
     position: absolute;
-    width: 42%;
-    height: 60%;
+    width: 100%;
+    height: 65%;
     left: 12%;
     top: 15%;
-    border: none;
+    border-radius:30px ;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    background-color: lightcoral;
+    background-color: rgba(255, 240, 240, 0.212);
+    border-color: black ;
+    border: solid 5px 
   }
 .texto::placeholder {
-   color: blueviolet;
+   color: rgb(20, 20, 20);
 }
 .texto:focus,
 .texto:active {
-  border: none;
   outline:none;
 }
 
@@ -53,12 +49,12 @@
   top: 80%;
 }
 .terminos p {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-style: normal;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style:normal;
   font-weight: 400;
   font-size:12px;
   line-height: 150%;
-  color: aqua;
+  color: rgb(0, 0, 0);
   opacity: 0.8;
   flex: none;
   order: 1;
@@ -69,39 +65,44 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 1% 0;
+  padding: 1%;
   position: absolute;
-  width: 80%;
+  width: 200%;
   left: 12%;
-  top: 12%;
+  top: 82%;
 }
 
 .btn-encriptar {
   align-items: center;
   justify-content: center;
   padding: 2%;
-  gap: 8px;
-  width: 25%;
-  background-color: rgb(122, 224, 255);
+  gap: 8%;
+  width: 35%;
+  background: rgb(156, 80, 255);
   border-radius: 24px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px ;
   line-height: 19px;
   text-align: center;
   color: rgb(0, 0, 0);
+  display:flex;
+  border: 2px solid black;
+  box-sizing: border-box;
+  flex-direction: row;
+  font-weight: 400;
 }
 
 .btn-desencriptar {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 2%;
   gap: 8%;
-  width: 25%;
-  background: rgb(194, 57, 57);
-  border: 1px solid black;
+  width: 35%;
+  background: rgb(57, 128, 194);
+  border: 2px solid black;
   border-radius: 24px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
@@ -110,25 +111,28 @@
   text-align: center;
   color: rgb(0, 0, 0);
 }
-
-.btn-desencriptar:hover,
-.btn-encriptar:hover {
-  margin: 0.3%;
+.btn-desencriptar{
+  margin: 1%;
   width: 24.5%;
-  padding: 1.8%;
+  padding: 2%;
 }
 
+.btn-encriptar{
+  margin: 1%;
+  width: 24.5%;
+  padding: 2%;
+} 
 .encriptado{
   display: flex;
   justify-content: center;
   position: absolute;
-  width: 30%;
-  height: 90%;
-  left: 60%;
+  width: 40%;
+  height: 98%;
+  left: 150%;
   top: 5%;
-  background: blanchedalmond;
+  background: rgb(255, 255, 255);
   box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
-  border-radius: 32px;
+  border-radius: 30px;
 }
 
 .mensaje-encriptado {
@@ -163,7 +167,7 @@ text-align: center;
   font-size: 16px ;
   line-height: 150%;
   text-align: center;
-  color: rgb(133, 36, 95);
+  color: rgb(130, 0, 252);
 }
 
 .encriptado img {
@@ -213,8 +217,8 @@ text-align: center;
     border-radius: 16px;
   }
 
-  .btn-encriptar:hover, 
-  .btn-desencriptar:hover {
+  .btn-encriptar, 
+  .btn-desencriptar {
     margin: 0.3%;
     width: 47.5%;
     padding: 1.8%;
@@ -234,5 +238,15 @@ text-align: center;
    top: 0;
    display: none;
    visibility: hidden;
+  }
+  .encriptadores {
+    width: 80%;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 150%;
+  text-align: center;
+  color: rgb(228, 8, 8);
   }
 }
